@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --glass: rgba(255,255,255,0.08); }
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+.bg-animated {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.18), transparent 40%),
+    radial-gradient(800px 400px at 80% 30%, rgba(34,211,238,0.16), transparent 40%),
+    radial-gradient(600px 600px at 50% 90%, rgba(34,197,94,0.12), transparent 40%);
+}
